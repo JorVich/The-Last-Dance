@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 15px 30px;
+    max-width: 80%;
+    background-color: rgba(66, 7, 7, 0.744);
+    border-radius: 10px;
+
+}
+
+.text-box img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px; /* Ajusta el radio de las esquinas redondeadas de la imagen */
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #c33046; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    outline: none; /* Sin contorno al enfocar */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición para el color de fondo y la sombra */
+}
+
+/* Estilos para el botón cuando se pasa el mouse encima */
+button:hover {
+    background-color: #ffffff; /* Color de fondo verde oscuro */
+    color: #c33046;
+}
+
+/* Estilos para el botón cuando se hace clic */
+button:active {
+    box-shadow: 0 5px #666; /* Sombra hacia abajo al hacer clic */
+    transform: translateY(4px); /* Movimiento hacia abajo al hacer clic */
+}
+
+
+/* Mostrar el pseudo-elemento cuando se pasa el mouse encima */
+button:hover::before {
+    opacity: 1; /* Hacer el pseudo-elemento visible */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.7em;
+    margin: 10px 0;
+}

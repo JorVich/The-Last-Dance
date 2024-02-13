@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background-color: #fffef0;
+}
+
+.container {
+    z-index: 1;
+    max-width: 400px;
+    margin: 0 200px;
+    padding: 20px;
+}
+
+.text-box {
+    background-color: rgba(221, 249, 251, 0.336);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.text-box p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.container2 {
+    z-index: 1;
+    max-width: 450px;
+    margin: 0 200px;
+    padding: 20px;
+}
+
+.text-box2 {
+    background-color: #fffef0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.text-box2 p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #c33046; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    outline: none; /* Sin contorno al enfocar */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición para el color de fondo y la sombra */
+}
+
+/* Estilos para el botón cuando se pasa el mouse encima */
+button:hover {
+    background-color: #ffffff; /* Color de fondo verde oscuro */
+    color: #c33046;
+}
+
+/* Estilos para el botón cuando se hace clic */
+button:active {
+    box-shadow: 0 5px #666; /* Sombra hacia abajo al hacer clic */
+    transform: translateY(4px); /* Movimiento hacia abajo al hacer clic */
+}
+
+
+/* Mostrar el pseudo-elemento cuando se pasa el mouse encima */
+button:hover::before {
+    opacity: 1; /* Hacer el pseudo-elemento visible */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
